@@ -9,7 +9,7 @@ public class Recorder {
     RecorderPropertiesBuilder props = new RecorderPropertiesBuilder()
       .simulationsFolder(IDEPathHelper.gradleSourcesDirectory.toString())
       .resourcesFolder(IDEPathHelper.gradleResourcesDirectory.toString())
-      .simulationPackage("computerdatabase")
+      .simulationPackage("webtours")
       .simulationFormatJava();
 
     GatlingRecorder.fromMap(props.build(), Option.<Path> apply(IDEPathHelper.recorderConfigFile));
